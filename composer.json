@@ -1,0 +1,21 @@
+{
+  "name": "vendor/TLGenerator",
+  "description": "Composer plugin for Vendor TLGenerator — runs tasks on install/update and autoload dump.",
+  "type": "composer-plugin",
+  "license": "MIT",
+  "require": {
+    "php": "^8.1",
+    "composer-plugin-api": "^2.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Vendor\\TLGenerator\\": "src/"
+    }
+  },
+  "extra": {
+    "class": "Vendor\\TLGenerator\\Plugin",
+    "plugin-optional": false
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
