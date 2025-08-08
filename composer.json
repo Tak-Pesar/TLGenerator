@@ -1,4 +1,3 @@
-
 {
   "name": "tak-pesar/tl-generator",
   "description": "Composer plugin for Vendor TLGenerator — runs tasks on install/update and autoload dump.",
@@ -14,7 +13,7 @@
     }
   },
   "extra": {
-    "class": "Tak\\Liveproto\\Plugin",
+    "class": "Tak\\Liveproto\\Tl\\Plugin",
     "plugin-optional": false
   },
   "minimum-stability": "stable",
