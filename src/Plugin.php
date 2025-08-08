@@ -15,14 +15,11 @@ class Plugin implements PluginInterface, EventSubscriberInterface
 {
     private Composer $composer;
     private IOInterface $io;
-    private ? string $path;
 
     public function activate(Composer $composer, IOInterface $io): void
     {
         $this->composer = $composer;
         $this->io = $io;
-        $util = new Util($composer);
-        $this->path = $util->findInstallPath('amphp/file');
     }
 
     public function deactivate(Composer $composer, IOInterface $io): void
@@ -49,7 +46,7 @@ class Plugin implements PluginInterface, EventSubscriberInterface
 
     public function onPostAutoloadDump(Event $event): void
     {
-        $this->io->write('<info>Vendor/TLGenerator: running post-autoload-dump tasks , amp/file path : '.$this->path.'</info>');
+        $this->io->write('<info>Vendor/TLGenerator: running post-autoload-dump tasks</info>');
 
         // Example task: write a small cache file in the vendor directory if writable.
         try {
