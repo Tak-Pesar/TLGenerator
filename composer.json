@@ -1,5 +1,5 @@
 {
-  "name": "vendor/tl-generator",
+  "name": "Tak-Pesar/tl-generator",
   "description": "Composer plugin for Vendor TLGenerator — runs tasks on install/update and autoload dump.",
   "type": "composer-plugin",
   "license": "MIT",
