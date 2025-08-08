@@ -10,7 +10,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Tak\\Liveproto\\Tl": "src/Tl/"
+      "Tak\\Liveproto\\Tl\\": "src/Tl/"
     }
   },
   "extra": {
