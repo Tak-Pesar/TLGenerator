@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Vendor\TLGenerator;
+namespace Tak\Liveproto\Tl;
 
 use Composer\Composer;
 use Composer\IO\IOInterface;
