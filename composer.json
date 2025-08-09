@@ -1,21 +1,25 @@
 {
-  "name": "tak-pesar/tl-generator",
-  "description": "Composer plugin for Vendor TLGenerator — runs tasks on install/update and autoload dump.",
-  "type": "composer-plugin",
-  "license": "MIT",
-  "require": {
-    "php": ">=8.2",
-    "composer-plugin-api": ">=2.5"
-  },
-  "autoload": {
-    "psr-4": {
-      "Tak\\Liveproto\\Tl\\": "src/Tl/"
-    }
-  },
-  "extra": {
-    "class": "Tak\\Liveproto\\Tl\\Plugin",
-    "plugin-optional": false
-  },
-  "minimum-stability": "stable",
-  "prefer-stable": true
+    "name": "tak-pesar/tl-generator",
+    "homepage": "https://liveproto.dev",
+    "description": "Composer plugin for TLGenerator - runs tasks on install / update and autoload dump",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.2",
+        "composer-plugin-api": ">=2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tak\\Liveproto\\": "src/"
+        },
+        "files": [
+            "src/setup.php"
+        ]
+    },
+    "extra": {
+        "class": "Tak\\Liveproto\\Plugin",
+        "plugin-optional": false
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
