@@ -1,11 +1,13 @@
 {
-    "name": "tak-pesar/tl-generator",
+    "name": "tak-pesar/bootstrapper",
     "homepage": "https://liveproto.dev",
-    "description": "Composer plugin for TLGenerator - runs tasks on install / update and autoload dump",
+    "description": "Composer plugin to set up LiveProto library requirements - runs tasks on install / update and autoload dump",
     "type": "composer-plugin",
     "license": "MIT",
     "require": {
         "php": ">=8.2",
+        "taknone/liveproto": "*",
+        "amphp/file": "^3.2.0",
         "composer-plugin-api": ">=2.5"
     },
     "autoload": {
