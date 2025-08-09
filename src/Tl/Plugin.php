@@ -15,8 +15,13 @@ use Composer\Script\Event;
 use Composer\Script\ScriptEvents;
 
 class Plugin implements PluginInterface {
-	public function activate(private Composer $composer,private IOInterface $io) : void {
-		$util = new Util($this->composer);
+	private Composer $composer;
+	private IOInterface $io;
+
+	public function activate(Composer $composer,IOInterface $io) : void {
+		$this->composer = $composer;
+		$this->io = $io;
+		$util = new Util($composer);
 		$path = $util->findInstallPath('tak/liveproto');
 		if(is_null($path) === false):
 			$tlpath = realpath($path);
